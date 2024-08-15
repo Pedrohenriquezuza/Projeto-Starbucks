@@ -4,6 +4,7 @@
 :root {
   --font-opensans: "Open Sans", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --color-starbucks: #117050;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 
 /*Config header*/
 header .line {
-  background-color: #117050;
+  background-color: var(--color-starbucks);
   height: 10px;
 }
 
@@ -73,4 +74,37 @@ header .line {
   width: 24px;
   margin-left: 40px;
   cursor: pointer;
+}
+
+/*SECTION BANNER - MAIN*/
+
+.banner {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.banner .txt--happyhour h1 span {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 400;
+}
+.banner .txt--happyhour h1 {
+  line-height: 95px;
+  max-width: 600px;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: var(--font-oswald), Arial;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.banner .banner-imgs img {
+  width: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--color-starbucks);
+  margin-top: 40px;
+  margin-right: 40px;
 }
