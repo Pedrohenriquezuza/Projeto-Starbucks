@@ -34,10 +34,43 @@ header .line {
   width: 64px;
 }
 
+.header--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header--search form {
+  display: flex;
+}
+
 .header--search input {
   font-size: 16px;
-  padding: 6px 10px;
+  font-weight: 100;
+  padding: 5px 15px;
   border: 1px solid #999;
   outline: 0;
-  
+  width: 100%;
+  max-width: 250px;
+}
+
+.header--search input::placeholder {
+  font-weight: normal;
+}
+
+.header--search button {
+  border: 0;
+  background-color: transparent;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.header--search button img {
+  width: 16px;
+}
+
+.header--right nav img {
+  width: 24px;
+  margin-left: 40px;
+  cursor: pointer;
 }
