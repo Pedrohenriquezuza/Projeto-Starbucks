@@ -1,3 +1,4 @@
+/*Config gerais*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
 
 :root {
@@ -11,7 +12,32 @@ body {
   padding: 0;
 }
 
+.interface {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/*Config header*/
 header .line {
   background-color: #117050;
   height: 10px;
+}
+
+.header--area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header--left img {
+  width: 64px;
+}
+
+.header--search input {
+  font-size: 16px;
+  padding: 6px 10px;
+  border: 1px solid #999;
+  outline: 0;
+  
 }
