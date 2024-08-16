@@ -18,6 +18,57 @@ body {
   margin: auto;
 }
 
+.bar {
+  background-color: var(--color-starbucks);
+  height: 25px;
+  width: 170px;
+}
+
+h1 {
+  font-family: var(--font-oswald), Arial;
+  font-size: 90px;
+  font-weight: bold;
+
+  line-height: 95px;
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-family: var(--font-oswald), Arial;
+  font-size: 35px;
+  font-weight: bold;
+  color: #111111;
+
+  line-height: 45px;
+  max-width: 400px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.cited {
+  font-weight: 100;
+  font-style: italic;
+  font-size: 15px;
+  margin: 25px 0px;
+}
+
+.btn-learn {
+  display: inline-block;
+  border: 2px solid #454545;
+  padding: 10px 25px;
+  color: #454545;
+  text-decoration: none;
+  margin-top: 15px;
+  border-radius: 3px;
+  transition: 0.1s all;
+}
+
+.btn-learn:hover {
+  background-color: #454545;
+  color: white;
+}
 /*Config header*/
 header .line {
   background-color: var(--color-starbucks);
@@ -91,15 +142,6 @@ header .line {
   font-size: 40px;
   font-weight: 400;
 }
-.banner .txt--happyhour h1 {
-  line-height: 95px;
-  max-width: 600px;
-  font-size: 90px;
-  font-weight: bold;
-  font-family: var(--font-oswald), Arial;
-  margin: 0;
-  margin-bottom: 40px;
-}
 
 .banner .banner-imgs img {
   width: 150px;
@@ -107,4 +149,67 @@ header .line {
   border: 5px solid var(--color-starbucks);
   margin-top: 40px;
   margin-right: 40px;
+}
+
+/*SECTION AREA 1 - MAIN*/
+
+.area1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
+.area1--content {
+  padding: 80px;
+}
+
+.area1--img1 {
+  background-color: green;
+  background-image: url(../img/f2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.area1--img2 {
+  background-color: blue;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  background-image: url(../img/f1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*SECTION AREA 2 - MAIN*/
+
+.area2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
+.area2--content {
+  padding: 80px;
+}
+
+.area2--img1 {
+  background-color: green;
+  background-image: url(../img/f4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 420px;
+}
+
+.area2--img2 {
+  background-color: blue;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+
+  background-image: url(../img/f3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
