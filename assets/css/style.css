@@ -253,7 +253,7 @@ header .line {
 }
 .area4--img1 {
   background-image: url(../img/bg3.jpg);
-  background-position: center;
+  background-position: left;
 }
 
 /*ULTIMA SECTION DO SITE - AREA 5 - MAIN*/
@@ -263,7 +263,7 @@ header .line {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 950px;
   width: 100%;
 }
 
@@ -274,4 +274,128 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+@media (max-width: 1145px) {
+  header .interface {
+    padding: 0px 80px;
+  }
+
+  .interface {
+    padding: 0px 20px;
+  }
+
+  .area5 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1145px) {
+  header .interface {
+    padding: 0px 80px;
+  }
+
+  .header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0px 20px;
+  }
+
+  .area1 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .area2 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .area2 {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .area5 {
+    display: block;
+    background-image: url(https://neofeed.com.br/wp-content/uploads/2023/11/Starbucks.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .header--right nav img {
+    margin-left: 20px;
+  }
+
+  nav img {
+    margin-left: 100px;
+  }
+
+  header .interface {
+    padding: 0px 30px;
+  }
+
+  .header--search input {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px 15px;
+    border: 1px solid #999;
+    outline: 0;
+    width: 100%;
+    max-width: 80px;
+  }
+
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .banner .banner-imgs img {
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid var(--color-starbucks);
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .area1,
+  .area2,
+  .area3,
+  .area4 {
+    grid-template-columns: 1fr;
+  }
+
+  .area1--content,
+  .area2--content,
+  .area3--content,
+  .area4--content {
+    padding: 40px;
+  }
+
+  .area2 h2 {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 17px;
+  }
+  .area5 {
+    display: block;
+    background-image: url(https://neofeed.com.br/wp-content/uploads/2023/11/Starbucks.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100vw;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 20px 5px;
+  }
 }
