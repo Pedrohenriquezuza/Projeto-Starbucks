@@ -156,7 +156,6 @@ header .line {
 .area1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  text-align: left;
 }
 
 .area1--content {
@@ -187,7 +186,6 @@ header .line {
 .area2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  text-align: left;
 }
 
 .area2--content {
@@ -209,6 +207,29 @@ header .line {
   grid-row: 1 / 3;
 
   background-image: url(../img/f3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*SECTION AREA 3 - MAIN*/
+
+.area3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
+.area3--content {
+  padding: 200px 80px;
+  background-image: url(../img/bg2.jpg);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.area3--img1 {
+  background-image: url(../img/f5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
